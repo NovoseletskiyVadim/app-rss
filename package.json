@@ -1,0 +1,19 @@
+{
+  "name": "my_rss_project",
+  "version": "1.0.0",
+  "description": "My first RSS project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NovoseletskiyVadim/app-rss.git"
+  },
+  "author": "Novoseletskiy Vadim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NovoseletskiyVadim/app-rss/issues"
+  },
+  "homepage": "https://github.com/NovoseletskiyVadim/app-rss#readme"
+}
