@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/NovoseletskiyVadim/app-rss/issues"
   },
-  "homepage": "https://github.com/NovoseletskiyVadim/app-rss#readme"
+  "homepage": "https://github.com/NovoseletskiyVadim/app-rss#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
