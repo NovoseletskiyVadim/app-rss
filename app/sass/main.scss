@@ -1,0 +1,19 @@
+
+
+html, body {
+    height: 100%; 
+    padding: 0; 
+    margin: 0;
+};
+
+div { 
+    width: 50%; 
+    height: 50%; 
+    float: left; 
+    overflow: scroll;
+};
+
+@import'channeList';
+@import'detailsNews';
+@import'newsList';
+@import'statistics';
