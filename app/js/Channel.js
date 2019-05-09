@@ -1,4 +1,3 @@
-import { url } from "inspector";
 
 /* 
     Describes the structure of the object 'Channel'
