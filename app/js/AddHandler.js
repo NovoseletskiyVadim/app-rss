@@ -1,6 +1,5 @@
 // Describes event handler click button "add"
 
-
 export default class AddHandler{
 
     constructor(channelObj, storageObj){
@@ -18,8 +17,10 @@ export default class AddHandler{
         this.addData.onclick=function(){
 
             let channel=that.channelObj;
+            channel.nameChannel=document.getElementById('nameChannel').value;
+            channel.urlChannel=document.getElementById('urlChannel').value;
+            
             let localStorage=that.storageObj;
-
             localStorage.addNewCannel(channel);
 
         };

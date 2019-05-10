@@ -6,10 +6,10 @@
 export default class Channel{
 
 
-    constructor(nameChannel, urlChannel){
+    constructor(){
         
-        this.nameChannel=nameChannel;
-        this.urlChannel=urlChannel;
+        this.nameChannel='';
+        this.urlChannel='';
 
     }
 
