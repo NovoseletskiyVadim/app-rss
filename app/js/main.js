@@ -4,7 +4,7 @@ console.log('main is ok ');
 import Channel from '../js/Channel.js';
 import ChannelLocalStorage from '../js/ChannelLocalStorage.js';
 import AddHandler from '../js/AddHandler.js';
-import DeleteHandler from '../js/deleteHandler.js';
+import DeleteHandler from '../js/DeleteHandler.js';
 import ChannelListView from '../js/ChannelListView.js';
 
 let channel=new Channel();
