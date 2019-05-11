@@ -48,6 +48,8 @@ export default class ChannelLocalStorage{
 
             const serialArray=JSON.stringify(infoFromLocalStorage);
             window.localStorage.setItem(this.myKey,serialArray);
+            window.location.reload();
+
 
 
         }else{
@@ -57,6 +59,8 @@ export default class ChannelLocalStorage{
 
             const serialArray=JSON.stringify(infoFromLocalStorage);
             window.localStorage.setItem(this.myKey,serialArray);
+            window.location.reload();
+
 
         }
 
@@ -74,10 +78,22 @@ export default class ChannelLocalStorage{
 
             const serialInfo=JSON.stringify(this.infInitialize);
             window.localStorage.setItem(this.myKey,serialInfo);
-            return infoFromLocalStorage;
+
+            const info=JSON.parse(window.localStorage.getItem(this.myKey));
+            return info;
 
         };
 
     };
+
+    rewriteDataLocalStorage(arr){
+
+        const serialArr=JSON.stringify(arr);
+        window.localStorage.setItem(this.myKey,serialArr);
+        
+        const infoFromLocalStorage=JSON.parse(window.localStorage.getItem(this.myKey));
+        return infoFromLocalStorage;
+
+    } 
 
 };
