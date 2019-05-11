@@ -11,11 +11,14 @@ export default class ChannelListView {
 
     viewChannelList(){
 
-  
+        
+
+        
         for(let i=0; i<this.arrFromLocalStorage.length;i++){
             
             let list=document.getElementById('list');
             let tr=document.createElement('tr');
+            tr.setAttribute('id',i);
 
             let tdChannelName=document.createElement('td');
                 
@@ -27,6 +30,7 @@ export default class ChannelListView {
             let tdBtnDelete=document.createElement('td');
             let buttonDelete=document.createElement('button');
             buttonDelete.innerText='delete';
+            buttonDelete.classList.add('delete');
             tdBtnDelete.appendChild(buttonDelete);
             
             tdChannelName.innerText=this.arrFromLocalStorage[i].nameChannel;
