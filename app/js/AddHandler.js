@@ -37,6 +37,7 @@ export default class AddHandler{
                 let list=document.getElementById('list');
 
                 let tr=document.createElement('tr');
+                tr.setAttribute('id',idChannel);
 
                 let tdChannelName=document.createElement('td');
                 
@@ -48,6 +49,8 @@ export default class AddHandler{
                 let tdBtnDelete=document.createElement('td');
                 let buttonDelete=document.createElement('button');
                 buttonDelete.innerText='delete';
+                buttonDelete.classList.add('delete');
+
                 tdBtnDelete.appendChild(buttonDelete);
                 
                 tdChannelName.innerText=channel.nameChannel;
