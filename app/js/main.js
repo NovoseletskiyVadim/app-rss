@@ -1,11 +1,13 @@
 
 console.log('main is ok ');
 
-import Channel from '../js/Channel.js';
-import ChannelLocalStorage from '../js/ChannelLocalStorage.js';
-import AddHandler from '../js/AddHandler.js';
-import DeleteHandler from '../js/DeleteHandler.js';
-import ChannelListView from '../js/ChannelListView.js';
+import Channel from './Channel.js';
+import ChannelLocalStorage from './ChannelLocalStorage.js';
+import AddHandler from './AddHandler.js';
+import DeleteHandler from './DeleteHandler.js';
+import ChannelListView from './ChannelListView.js';
+import ServerRequestsNews from './ServerRequestsNews.js';
+import ReadNewsHandler from './ReadNewsHandler.js';
 
 let channel=new Channel();
 let storage= new ChannelLocalStorage();
@@ -21,6 +23,12 @@ add.addChannel();
 
 let deleteChannel = new DeleteHandler(storage,view);
 deleteChannel.deleteChannel();
+
+let serverRequests=new ServerRequestsNews();
+console.dir(serverRequests);
+
+let readNews =new ReadNewsHandler(storage, serverRequests);
+readNews.readChannelNews();
 
 
 

@@ -12,28 +12,29 @@ export default class ChannelLocalStorage{
         this.myKey='rssChannels';
         this.infInitialize=[
             {
+                
                 nameChannel:"@channel_1",
-                urlChannel:"http//"
+                urlChannel:"https://itc.ua/feed/"
             },
         
             {
                 nameChannel:"@channel_2",
-                urlChannel:"http//"
+                urlChannel:"https://www.liga.net/news/politics/rss.xml"
             },
         
             {
                 nameChannel:"@channel_3",
-                urlChannel:"http//"
+                urlChannel:"http//3"
             },
         
             {
                 nameChannel:"@channel_4",
-                urlChannel:"http//"
+                urlChannel:"http//4"
             },
         
             {
                 nameChannel:"@channel_5",
-                urlChannel:"http//"
+                urlChannel:"http//5"
             }
         ];
 

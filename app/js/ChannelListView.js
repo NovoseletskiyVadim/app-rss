@@ -10,9 +10,6 @@ export default class ChannelListView {
 
 
     viewChannelList(){
-
-        
-
         
         for(let i=0; i<this.arrFromLocalStorage.length;i++){
             
@@ -25,6 +22,7 @@ export default class ChannelListView {
             let tdReadChannel=document.createElement('td');
             let buttonRead=document.createElement('button');
             buttonRead.innerText='read channel';
+            buttonRead.classList.add('readNews');
             tdReadChannel.appendChild(buttonRead);
 
             let tdBtnDelete=document.createElement('td');
